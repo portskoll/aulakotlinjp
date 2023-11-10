@@ -54,6 +54,10 @@ fun main() {
     println(x);
     println(a);
 
+    println("----------- Operadores ----------------");
+    //altere os paremetro da funão e tera saidas diferentes
+    operadores(2,2, "amor");
+
 }
 // uama curiosidade sobre modulo
 /*
@@ -76,4 +80,52 @@ Espero que isso ajude! 😊
  */
 
 
+//--------------------------- operadores lógicos ----------------------
 
+// muito utilizados para tomadas de decisão
+
+/*
+
+Operador            Descrição               Exemplo
+==                  igual                   x==y
+!=                  diferente               x!=y
+>                   maior                   x > y
+<                   menor                   x < y
+>=                  maior ou igual          x >= y
+<=                  menor ou igual          x <= y
+&&                  operador ‘e’            x==0 && y==0
+||                  operador ‘ou’           x==0 || y==0
+!                   operador ‘não’          !a.isEmpty()
+
+ */
+
+// Vamos a alguns exemplos
+
+//a função abaixo colocando um valor 0 e vazio os argumentos se tornam opcionais
+fun operadores (n1 : Int = 0, n2 : Int = 0, texto : String = "" ){
+
+    //abaixo alguns exemplos
+
+    if (n1 == n2 ){
+        println("$n1  == $n2");
+    }
+
+    if (n1 != n2 ){
+        println("$n1  != $n2");
+    }
+
+    if (n1 > n2 ){
+        println("$n1  > $n2");
+    }
+
+    if (n1 == n2 && !texto.isEmpty() ){
+        println("aqui é e $n1  ==  $n2 texto = $texto");
+    }
+
+    if (n1 == n2 || !texto.isEmpty() ){
+        println(" aqui é ou $n1  ==  $n2 texto = $texto");
+    }
+
+
+
+}
